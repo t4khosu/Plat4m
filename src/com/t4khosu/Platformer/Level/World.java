@@ -1,13 +1,5 @@
 package com.t4khosu.Platformer.Level;
 
-import com.t4khosu.Platformer.entities.interactiveEntities.Fire;
-import com.t4khosu.Platformer.entities.interactiveEntities.plants.PlantManager;
-import com.t4khosu.Platformer.graphics.Screen;
-import com.t4khosu.Platformer.graphics.cutscenes.ChangeAreaCutscene;
-import com.t4khosu.Platformer.graphics.cutscenes.Cutscene;
-import com.t4khosu.Platformer.graphics.cutscenes.Enter_Door_Cutscene;
-import com.t4khosu.Platformer.input.Keyboard;
-import com.t4khosu.Platformer.saveGame.SaveManager;
 import com.t4khosu.Platformer.Level.areas.HauntedForest;
 import com.t4khosu.Platformer.Level.areas.Neuleben;
 import com.t4khosu.Platformer.Level.areas.VillageForest;
@@ -19,9 +11,17 @@ import com.t4khosu.Platformer.entities.Camera;
 import com.t4khosu.Platformer.entities.Door;
 import com.t4khosu.Platformer.entities.Timer;
 import com.t4khosu.Platformer.entities.dialog.Dialogbox;
+import com.t4khosu.Platformer.entities.interactiveEntities.Fire;
+import com.t4khosu.Platformer.entities.interactiveEntities.plants.PlantManager;
 import com.t4khosu.Platformer.entities.player.Player;
 import com.t4khosu.Platformer.entities.weather.Rain;
 import com.t4khosu.Platformer.entities.weather.Weather;
+import com.t4khosu.Platformer.graphics.Screen;
+import com.t4khosu.Platformer.graphics.cutscenes.ChangeAreaCutscene;
+import com.t4khosu.Platformer.graphics.cutscenes.Cutscene;
+import com.t4khosu.Platformer.graphics.cutscenes.Enter_Door_Cutscene;
+import com.t4khosu.Platformer.input.Keyboard;
+import com.t4khosu.Platformer.saveGame.SaveManager;
 
 import java.awt.*;
 import java.util.Random;
