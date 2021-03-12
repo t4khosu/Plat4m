@@ -1,0 +1,38 @@
+i - item
+b - background
+o - obstacles
+e - endboss
+h - hidden
+
+
+----------------
+Poison Factory
+----------------
+
+i) shoes for double jump
+
+b) pipelines
+b) stone
+b) broken stones
+b) hole in the background
+b) second background
+b) poisoned waterfall
+
+o) spikes
+o) poisoned water
+o) poisoned slime -> schleimspur die giftig ist
+o) solders with swords
+
+e) slime monster, jumps around 
+
+h) gaming automat 1 - pong
+
+
+1) langsames \u00DCben von Spr\u00FCngen ohne Verletzungsgefahr
+2) Einf\u00FChren von wegblockaden
+
+- herunterfallende platte
+
+
+------ entry -----------------------------------------
+-
