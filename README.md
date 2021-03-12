@@ -8,8 +8,8 @@ The reason for this kind of project was learning how OOP and game programming wo
 * Requirements: None (just run the main and enjoy the game)
 
 ## Warnings
-Since this game is really old and I am from Germany, the in-game language is German. Also the game is not that polished, so keep your expectations down.
-Saving does not work and there are certainly some bugs I have not fixxed. Back than I didn't write tests, so ... I am scared to touch this code without spending hours and hours
+Since this game is really old many bugs will appear. Also I am from Germany, so the in-game language is German. Keep your expectations low!
+Saving does not work, too. Back than I didn't write tests, so ... I am scared to touch this code without spending hours and hours
 of refactoring.
 
 ## Learnings
