@@ -9,7 +9,7 @@ The reason for this kind of project was learning how OOP and game programming wo
 
 ## Warnings
 Since this game is really old many bugs will appear. Also I am from Germany, so the in-game language is German. Keep your expectations low!
-Saving does not work, too. Back than I didn't write tests, so ... I am scared to touch this code without spending hours and hours
+Saving does not work, either. Back then I didn't write tests, so ... I am scared to touch this code without spending hours and hours
 of refactoring.
 
 ## Learnings
