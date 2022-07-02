@@ -102,13 +102,11 @@ public class Menu_Cutscene extends Cutscene{
 				if(hoveredSetting + 1 < buttons.length){
 					hoveredSetting++;
 				}
-				System.out.println(hoveredSetting);
 			}
 			else if(world.getPlayer().getInput().typedUp){
 				if(hoveredSetting - 1 >= 0){
 					hoveredSetting--;
 				}
-				System.out.println(hoveredSetting);
 			}
 			
 			else if(world.getPlayer().getInput().typedInteract){

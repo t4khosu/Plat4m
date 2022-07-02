@@ -61,7 +61,6 @@ public class Player extends Mob {
      *
      * @param x
      * @param y
-     * @param sprite
      * @param input
      * @param world
      */
@@ -158,7 +157,8 @@ public class Player extends Mob {
                 breathBar.sub(1);
             }
 
-            if (Game.timer % 30 == 0) new Spawner(x + 4 + (3 * dirX), y, 1, level, Spawner.ParticleType.AIR); //air particle
+            if (Game.timer % 30 == 0)
+                new Spawner(x + 4 + (3 * dirX), y, 1, level, Spawner.ParticleType.AIR); //air particle
         }
 
         //******************************************************************************
@@ -266,7 +266,7 @@ public class Player extends Mob {
             else moveX(dirX * speed);
         }
         if (psm.isClimbing()) {
-            moveY(-speed);
+            moveY(-speed/2);
         }
         psm.setWalking(false);
         psm.setClimbing(false);
@@ -390,9 +390,7 @@ public class Player extends Mob {
     public void eatBerry(Item berry) {
         if (berry.getAmount() <= 0) return;
         if (berry instanceof Rolberry) {
-            System.out.println(life + " " + max_life);
             if (life != max_life) {
-                System.out.println("rolberry");
                 new Spawner(x + 1, y - 1, 0, level, Spawner.ParticleType.HEALTH);
                 addLife(4);
                 berry.useItem(1);
@@ -401,7 +399,6 @@ public class Player extends Mob {
 
         } else if (berry instanceof Agroilberry) {
             if (stamina != max_stamina) {
-                System.out.println("agroilberry");
                 new Spawner(x + 1, y - 1, 0, level, Spawner.ParticleType.STAMINA);
                 addStamina(10);
                 berry.useItem(1);

@@ -171,7 +171,6 @@ public class WakeUpCutscene extends Cutscene{
 					break;
 					
 			case 18: remove();	
-					System.out.println("remove");
 					break;
 		}
 	}
