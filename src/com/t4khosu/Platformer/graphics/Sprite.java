@@ -56,18 +56,18 @@ public class Sprite {
 		
 	//~Middleground Sprites: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	
-	public static Sprite empty   = new Sprite(104, 104, "/middlegrounds/empty.png", 2);
+	public static Sprite empty   = new Sprite(104, 104, "/middlegrounds/processed/empty.png", 2);
 	
 	//middlegrounds jungle:
-	public static Sprite forest0   = new Sprite(104, 104, "/middlegrounds/forest0.png", 2);
-	public static Sprite forest1   = new Sprite(104, 104, "/middlegrounds/forest1.png", 2);
-	public static Sprite forest2   = new Sprite(104, 104, "/middlegrounds/forest2.png", 2);
-	public static Sprite forest3   = new Sprite(104, 104, "/middlegrounds/forest3.png", 2);
-	public static Sprite forest4   = new Sprite(104, 104, "/middlegrounds/forest4.png", 2);
-	public static Sprite forest5   = new Sprite(104, 104, "/middlegrounds/forest5.png", 2);
-	public static Sprite forest6   = new Sprite(104, 104, "/middlegrounds/forest6.png", 2);
-	public static Sprite forest7   = new Sprite(104, 104, "/middlegrounds/forest7.png", 2);
-	public static Sprite forest8   = new Sprite(104, 104, "/middlegrounds/forest8.png", 2);
+	public static Sprite forest0   = new Sprite(104, 104, "/middlegrounds/processed/forest0.png", 2);
+	public static Sprite forest1   = new Sprite(104, 104, "/middlegrounds/processed/forest1.png", 2);
+	public static Sprite forest2   = new Sprite(104, 104, "/middlegrounds/processed/forest2.png", 2);
+	public static Sprite forest3   = new Sprite(104, 104, "/middlegrounds/processed/forest3.png", 2);
+	public static Sprite forest4   = new Sprite(104, 104, "/middlegrounds/processed/forest4.png", 2);
+	public static Sprite forest5   = new Sprite(104, 104, "/middlegrounds/processed/forest5.png", 2);
+	public static Sprite forest6   = new Sprite(104, 104, "/middlegrounds/processed/forest6.png", 2);
+	public static Sprite forest7   = new Sprite(104, 104, "/middlegrounds/processed/forest7.png", 2);
+	public static Sprite forest8   = new Sprite(104, 104, "/middlegrounds/processed/forest8.png", 2);
 	
 	public static Sprite[] forest_0 = {empty, forest0, forest1};
 	public static Sprite[] forest_1 = {forest1, forest2, forest3};
@@ -76,9 +76,9 @@ public class Sprite {
 	public static Sprite[] forest_4 = {forest7, forest8, empty};
 	
 	//middlegrounds town:
-	public static Sprite town1    = new Sprite(104, 104, "/middlegrounds/town1.png", 2);
-	public static Sprite town2    = new Sprite(104, 104, "/middlegrounds/town2.png", 2);
-	public static Sprite town3    = new Sprite(104, 104, "/middlegrounds/town3.png", 2);
+	public static Sprite town1    = new Sprite(104, 104, "/middlegrounds/processed/town1.png", 2);
+	public static Sprite town2    = new Sprite(104, 104, "/middlegrounds/processed/town2.png", 2);
+	public static Sprite town3    = new Sprite(104, 104, "/middlegrounds/processed/town3.png", 2);
 	public static Sprite[] town_1 = {town1, town2, town3};
 	
 	//~Image Sprites: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

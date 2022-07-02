@@ -77,7 +77,6 @@ public class Player extends Mob {
         JK = new Item[2]; //middle fields
         smallSlots = new Item[6]; //side fields
 
-        //start values:
         initStartValues();
     }
 
