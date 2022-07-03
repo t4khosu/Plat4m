@@ -51,9 +51,9 @@ public class Neuleben_1_1 extends LoadLevel {
         interactiveEntities.add(ChestManager.rolBerrySeed_neuleben.initChestAndReturn(this));
         interactiveEntities.add(ChestManager.agroilBerrySeed_neuleben.initChestAndReturn(this));
 
-        interactiveEntities.add(new Sign(10 * 8, 45 * 8, "Kurbs Laden", Sign.SignType.WOODEN));
-        interactiveEntities.add(new Sign(29 * 8, 42 * 8, "Angelstelle ", Sign.SignType.WOODEN));
-        interactiveEntities.add(new Sign(60 * 8, 45 * 8, "Farmhaus", Sign.SignType.WOODEN));
+        interactiveEntities.add(new Sign(10 * 8, 45 * 8, "Kurbs Laden für Allerlei", Sign.SignType.WOODEN));
+        interactiveEntities.add(new Sign(29 * 8, 42 * 8, "Angelplatz", Sign.SignType.WOODEN));
+        interactiveEntities.add(new Sign(60 * 8, 45 * 8, "Prengs Farm", Sign.SignType.WOODEN));
     }
 
     @Override

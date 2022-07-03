@@ -37,7 +37,7 @@ public class Neuleben_2_1 extends LoadLevel {
 	
 	@Override
 	protected void initSurroundings(){
-		interactiveEntities.add(new Sign(37*8, 46*8, "Ende - Verlassen auf eigene Gefahr", Sign.SignType.WOODEN));
+		interactiveEntities.add(new Sign(37*8, 46*8, "Verlassen auf eigene Gefahr!", Sign.SignType.WOODEN));
 	}
 	
 	@Override

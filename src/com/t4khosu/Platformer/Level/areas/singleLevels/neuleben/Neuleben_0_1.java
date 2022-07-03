@@ -53,7 +53,7 @@ public class Neuleben_0_1 extends LoadLevel {
 		interactiveEntities.add(SavePointManager.p1_neuleben.initLevelAndReturn(this));
 		interactiveEntities.add(ChestManager.woodenFishingPole_neuleben.initChestAndReturn(this));
 		
-		interactiveEntities.add(new Sign(72*8, 46*8, "Speicherpunkt", Sign.SignType.WOODEN));
+		interactiveEntities.add(new Sign(72*8, 46*8, "Speichere deinen Fortschritt", Sign.SignType.WOODEN));
 		interactiveEntities.add(new Dregens_Bookshelf(68*8, 25*8, this));
 	}
 	

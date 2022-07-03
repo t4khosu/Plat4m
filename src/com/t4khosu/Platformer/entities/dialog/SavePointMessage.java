@@ -8,7 +8,7 @@ public class SavePointMessage extends MultiChoiceMessage{
 	private SavePoint savePoint;
 	
 	public SavePointMessage(Player player, SavePoint savePoint) {
-		super(player, "Speichern", "Position speichern?", new String[]{"ja", "nein"});
+		super(player, "Speichern", "Fortschritt speichern?", new String[]{"ja", "nein"});
 		this.savePoint = savePoint;
 	}
 	
