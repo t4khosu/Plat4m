@@ -362,8 +362,6 @@ public class Game extends Canvas implements Runnable {
     private static final String title = "Plat4m";
     private static boolean running = false;
 
-    private int lastUpdatesPerSecond = 0;
-
     private final BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
     private final int[] pixels = ((DataBufferInt) image.getRaster().getDataBuffer()).getData();
 
@@ -376,6 +374,8 @@ public class Game extends Canvas implements Runnable {
     Surface surface;
 
     public static int timer = 0;
+
+    private boolean updateFluctuationTooGreat = false;
 
     public Game() {
         Dimension size = new Dimension(width * scale, height * scale);
@@ -401,25 +401,26 @@ public class Game extends Canvas implements Runnable {
     public void run() {
         requestFocus();
 
-        int updates = 0;
-        double lastTime = System.nanoTime();
-        double ns = 1000000000.0 / 60.0;
+        long lastTime = System.nanoTime();
+        final int goalUpdatesPerSecond = 55;
+        final double ns = 1000000000.0 / goalUpdatesPerSecond;
         double delta = 0;
-        double deltaMili = 0;
-        double lastMili = System.currentTimeMillis();
+
+        int updates = 0;
+        int updatesPerSecond = 0;
+        int renders = 0;
+        long timeSpent = 0;
 
         while (running) {
-            double currentMili = System.currentTimeMillis();
-            double currentTime = System.nanoTime();
-            delta += (currentTime - lastTime) / ns;
-            lastTime = currentTime;
-
-            deltaMili += currentMili - lastMili;
-            lastMili = currentMili;
-
+            long now = System.nanoTime();
+            timeSpent += now - lastTime;
+            delta += (now - lastTime) / ns;
+            lastTime = now;
 
             if (delta >= 1) {
-                if (lastUpdatesPerSecond > 55 && lastUpdatesPerSecond < 65) {
+                this.updateFluctuationTooGreat = updatesPerSecond <= goalUpdatesPerSecond - 5 || updatesPerSecond >= goalUpdatesPerSecond + 5;
+
+                if (!this.updateFluctuationTooGreat) {
                     update();
                 }
                 updates++;
@@ -427,17 +428,20 @@ public class Game extends Canvas implements Runnable {
             }
 
             render();
+            renders++;
 
-            if (deltaMili >= 1000) {
-                deltaMili = 0;
-                lastUpdatesPerSecond = updates;
-                frame.setTitle(title + " | Updates: " + updates);
+            if (timeSpent >= 1000000000) {
+                frame.setTitle(title + " | Updates per Second: " + updates + " | Frames per Second: " + renders);
+
+                updatesPerSecond = updates;
+                timeSpent = 0;
                 updates = 0;
+                renders = 0;
             }
         }
     }
 
-    public void update() {
+    private void update() {
         if (timer > 2000) timer = 0;
         timer++;
 
@@ -452,8 +456,6 @@ public class Game extends Canvas implements Runnable {
             return;
         }
 
-        boolean loaded = lastUpdatesPerSecond > 55 && lastUpdatesPerSecond < 65;
-
         int xScroll = world.getCamera().getX() - screen.getWidth() / 2;
         int yScroll = world.getCamera().getY() - screen.getHeight() / 2;
 
@@ -465,20 +467,19 @@ public class Game extends Canvas implements Runnable {
             xScroll = (world.getActualArea().getActualLevel().tileWidth * 8) - screen.getWidth();
 
         screen.clear();
-        if (loaded) {
+
+        if (!this.updateFluctuationTooGreat) {
             world.render(screen, xScroll, yScroll);
-        } else {
-            screen.clear();
         }
 
         for (int i = 0; i < pixels.length; i++) {
             pixels[i] = screen.getPixels()[i];
         }
-        Graphics g = bs.getDrawGraphics();
 
+        Graphics g = bs.getDrawGraphics();
         g.drawImage(image, 0, 0, getWidth(), getHeight(), null);
 
-        if (loaded) {
+        if (!this.updateFluctuationTooGreat) {
             world.render(g);
         } else {
             g.setColor(Color.WHITE);
