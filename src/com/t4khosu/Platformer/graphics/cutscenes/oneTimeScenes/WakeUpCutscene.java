@@ -58,52 +58,52 @@ public class WakeUpCutscene extends Cutscene{
 				break;
 				
 			case 1: 
-				text = "Bleib stehen! Du kannst nicht davon rennen!";
+				text = "Stehen geblieben!";
 				textTimer();	
 				break;
 				
 			case 2: 
-				text = "ALLE EINHEITEN! Er rennt Richtung Westen in die verbotene Zone!";
+				text = "Alle Einheiten. Er rennt zur verbotenen Deponie!";
 				textTimer();
 				break;
 				
 			case 3: 
-				text = "Steck das Ding weg, diesen M\u00F6rder bekommen wir auch so!";
+				text = "Wir haben keine Zeit f\u00FCr Verst\u00E4rkung! Dieses Monster bekommen wir auch so!";
 				textTimer();
 				break;
 				
 			case 4: 
-				text = "Los los los los los.....";
+				text = "Los los...";
 				textTimer();
 				break;
 				
 			case 5: 
-				text = "................";
+				text = "...";
 				textTimer();
 				break;
 				
 			case 6: 
-				text = "... 2min sp�ter ...";
+				text = "*Wenige Minuten sp\u00E4ter*";
 				textTimer();
 				break;
 				
 			case 7: 
-				text = "BIST DU SICHER DASS ER DA DR\u00DCBER GESPRUNGEN IST?!";
+				text = "Bist du dir sicher, dass er \u00FCber diese Mauer geklettert ist?";
 				textTimer();
 				break;
 				
 			case 8: 
-				text = "Ja, ich habe es gesehen! Kein Zweifel!";
+				text = "Kein Zweifel!";
 				textTimer();
 				break;
 				
 			case 9: 
-				text = "Okay, bei diesen Wildlingen ist er sicher schon so gut wie tot!";
+				text = "Perfekt. Unter den Wildlingen und den Gifts\u00FCmpfen sollte er keinen Tag \u00FCberleben.";
 				textTimer();
 				break;
 				
 			case 10: 
-				text = "Wir gehen zur\u00FCck. Solange er nicht zur\u00FCck kommt soll es mir Recht sein.";
+				text = "Wir gehen zur\u00FCck. Es gibt hier nichts mehr zu tun.";
 				textTimer();
 				break;
 			case 11:
