@@ -17,7 +17,7 @@ public class Text {
     private Color headlineColor = new Color(180, 240, 180);
     private Font headlineFont = new Font("Arial Hebrew", Font.BOLD, 14);
     private Color textColor = Color.white;
-    private Font textFont = new Font("Arial Hebrew", Font.PLAIN, 14);
+    private Font textFont = new Font(Font.MONOSPACED, Font.PLAIN, 15);
 
     private String shortText = "";
     private String formattedShortText = "";
@@ -71,15 +71,15 @@ public class Text {
         g.setColor(this.textColor);
         g.setFont(this.textFont);
 
-        ArrayList<String> text = stringSplit(g, 270, this.formattedShortText);
+        ArrayList<String> text = this.stringSplit(g, 270, this.formattedShortText);
         for (int i = 0; i < text.size(); i++) {
             g.drawString(text.get(i), this.posX, this.posY + 22 * (i + 1));
         }
 
         if (multiChoice && this.textShown == this.text.length()) {
-            for (int i = 0; i < choices.length; i++) {
-                String arrow = i == db.getSelectedChoice() ? "\u21E8 " : " ";
-                g.drawString(arrow + choices[i], this.posX, this.posY + 22 * (text.size() + i + 1));
+            for (int i = 0; i < this.choices.length; i++) {
+                String arrow = i == this.db.getSelectedChoice() ? "\u21E8 " : " ";
+                g.drawString(arrow + this.choices[i], this.posX, this.posY + 22 * (text.size() + i + 1));
             }
         }
     }

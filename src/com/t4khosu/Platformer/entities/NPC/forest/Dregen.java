@@ -43,21 +43,21 @@ public class Dregen extends NPC {
         actualDialog = 0;
         havingQuest = true;
 
-        String[] a = {"#Ich bin Dregen, der Stammesh\u00E4uptling.",
+        String[] a = {"#Ich bin Dregen, der Stammesleiter.",
                 "#Du fragst dich sicher, wo du hier bist.",
-                "#Gestern Nacht haben dich meine Leute am Eingang meines Dorfes gefunden, drum lie\u00df ich dich bei einen von ihnen schlafen.",
+                "#Gestern Nacht haben dich meine Leute am Eingang des Dorfes gefunden, drum ließ ich dich bei einem von ihnen schlafen.",
                 "#Ich hoffe, Ahb hat dir keine Angst eingejagt. Er mag keine Fremden...",
-                "#Aber genug der Rede. Woher kommst du? Warum bist du hier her gekommen?",
+                "#Genug der Rede. Woher kommst du? Warum bist du hierher gekommen?",
                 "#...",
-                "#DU BIST GEFLOHEN? Ich verstehe...",
-                "#Die Lage ist kompliziert. Aber ich mache dir einen Vorschlag.",
-                "#Ich versuche mir etwas zu \u00FCberlegen, in der Zwischenzeit kannst du unserem Dorf aushelfen. Wir brauchen immer helfende H\u00E4nde!",
-                "#Du sollst auch Essen und Trinken daf\u00FCr erhalten. Also los. Hilf dem Dorf und du darfst hier vorerst bleiben."};
+                "#Du musstest fliehen??? Verrat???",
+                "#Deine Lage klingt kompliziert. Aber ich mache dir einen Vorschlag.",
+                "#Ich versuche mir etwas zu überlegen. In der Zwischenzeit kannst du unserem Dorf aushelfen.",
+                "#Du sollst auch Nahrung dafür erhalten. Hilf dem Dorf und du darfst vorerst hier bleiben."};
         dialogs.add(a);
 
-        String[] b = {"#Ich suche noch nach einer L\u00F6sung.",
+        String[] b = {"#Ich suche noch nach einer Lösung.",
                 "#Hilf in der Zwischenzeit dem Dorf etwas aus.",
-                "#Wir k\u00F6nnen immer Hilfe gebrauchen!"};
+                "#Wir können immer Hilfe gebrauchen!"};
         dialogs.add(b);
 
         String[] c = {"#Wie ich sehe hast du dem Dorf gut ausgeholfen.",

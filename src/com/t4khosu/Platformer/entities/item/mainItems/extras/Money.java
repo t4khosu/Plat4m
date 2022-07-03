@@ -14,7 +14,7 @@ public class Money extends Item {
 		this.type 			= ItemType.MONEY;
 		stackable 			= true;
 		this.name			= "Rul";
-		this.description 	= "Kann benutzt werden um neue Items zu kaufen";
+		this.description 	= "Währung";
 		
 		this.collectSprite	= Sprite.get_money_sprite;
 		

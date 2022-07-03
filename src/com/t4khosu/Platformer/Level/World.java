@@ -104,8 +104,8 @@ public class World {
 
         //=================================================
         bpm = new BreakPointManager(this);
-        bpm.setBreakPointBeginning(2);
-        bpm.setPlayerModus(1);
+        bpm.setBreakPointBeginning(5);
+        bpm.setPlayerModus(0);
         //=================================================
     }
 

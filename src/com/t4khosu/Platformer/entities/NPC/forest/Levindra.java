@@ -39,7 +39,7 @@ public class Levindra extends NPC {
     public void generateDialogs() {
         actualDialog = 0;
 
-        String[] a = {"#Hey, ein neues Gesicht! Freut mich dich zu sehen."};
+        String[] a = {"#Ein neues Gesicht. Willkommen!"};
         dialogs.add(a);
 
         String[] b = {"#Hallo",

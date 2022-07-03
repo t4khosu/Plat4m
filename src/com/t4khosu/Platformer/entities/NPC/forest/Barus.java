@@ -27,7 +27,11 @@ public class Barus extends NPC {
      */
     public void generateDialogs() {
         actualDialog = 0;
-        String[] a = {"#Tobi versteckt sich mal wieder in seinem \"Versteck\". Er wird wohl nie erwachsen..."};
+        String[] a = {
+                "#Tobi versteckt sich mal wieder...",
+                "#Vielleicht kannst du mit ihm sprechen?",
+                "#Drücke nach unten, um in seinen Raum zu kriechen."
+        };
         dialogs.add(a);
     }
 

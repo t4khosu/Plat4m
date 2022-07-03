@@ -102,9 +102,9 @@ public class PlayerDeath_Cutscene extends Cutscene{
 		if(action < 5){
 			switch(action){
 			case 4:
-				g.drawString("Es wird immer ein n\u00E4chstes Mal geben!",  Game.width/5*Game.scale, Game.height/2*Game.scale + 60);
+				g.drawString("Oder weiterspielen?",  Game.width/5*Game.scale, Game.height/2*Game.scale + 60);
 			case 3:
-				g.drawString("Doch gib nicht auf Abenteurer!",  Game.width/5*Game.scale, Game.height/2*Game.scale + 30);
+				g.drawString("Aufgeben?",  Game.width/5*Game.scale, Game.height/2*Game.scale + 30);
 			case 2: 
 				g.drawString("Du bist gestorben...",  Game.width/5*Game.scale, Game.height/2*Game.scale);
 			}

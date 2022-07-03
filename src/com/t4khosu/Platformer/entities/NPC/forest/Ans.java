@@ -27,16 +27,15 @@ public class Ans extends NPC {
      */
     public void generateDialogs() {
         actualDialog = 0;
-        String[] a = {"#Schon gewusst: wenn du SPACE dr\u00FCckst, kannst du Leute und Schilder ansprechen.",
+        String[] a = {"#Schon gewusst: wenn du <Space> drückst, kannst du Leute und Schilder ansprechen.",
                 "#...",
-                "#Was soll das hei\u00dfen, das wei\u00dft du schon?",
-                "#Hmm, okay, dann etwas, das du noch nicht wusstest!",
-                "#Dr\u00FCcke E um in dein Inventar zu gelangen!",
-                "#HAHA damit hast du nicht gerechnet!"
+                "#Was? Das weißt du schon?",
+                "#Hmm, dann etwas anderes.",
+                "#Drücke E um in dein Inventar zu gelangen.",
         };
         dialogs.add(a);
 
-        String[] b = {"#Ich hoffe ich habe dir wenigstens eine n\u00FCtzliche Information gegeben."};
+        String[] b = {"#Ich hoffe, ich konnte dir wenigstens EINE nützliche Information gegeben."};
         dialogs.add(b);
     }
 

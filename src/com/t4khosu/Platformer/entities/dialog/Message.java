@@ -50,7 +50,7 @@ public class Message extends Dialogbox {
         super(player.getInput(), item.getSprite());
 
         if (amount > 1) {
-            this.headline = item.getName() + "( " + amount + ")";
+            this.headline = item.getName() + " (" + amount + ")";
         } else {
             this.headline = item.getName();
         }

@@ -30,21 +30,23 @@ public class Ahb extends NPC {
      * generate all dialogs
      */
     public void generateDialogs() {
-        actualDialog = 0;
+        this.actualDialog = 0;
 
-        String[] ch = {"Ja ... bitte?", "Nein, ich bin doch nicht bl\u00F6d!"};
-        choices.add(new Choices(4, ch));
+        String[] choices = {"Ja ... bitte?", "Nein, ich bin doch nicht blöd!"};
+        this.choices.add(new Choices(4, choices));
 
-        String[] d_0 = {"#Hey!",
-                "#Du bist endlich wach!",
-                "#Ich wei\u00df nicht woher du kommst und was du hier sollst, aber Dregen hat mich beauftragt, auf dich zu achten bis du wach bist.",
-                "#Du sollst zu ihm gehen, damit entschieden werden kann was wir mit dir machen.",
-                "#Keine Sorge, wir sind ein nettes Dorf, im schlimmsten Fall wirst du human get\u00F6tet.",
-                "#Also geh! Sonst ist das das letzte mal, dass du aufgewacht bist."
+        String[] d_0 = {"#Na endlich bist du wach!",
+                "#Dregen hat mich gezwungen auf dich aufzupassen...",
+                "#Wegen dir musste ich den ganzen Tag drinnen verbringen!",
+                "#...",
+                "#Ach ja, ich soll dich direkt zu ihm schicken. Er wird entschieden, was wir mit dir machen.",
+                "#Es gab schon lange keine Hinrichtung mehr.",
+                "#Hehe.",
+                "#Na los, geh! Sonst nehme ich Dregen die Entscheidung ab!"
         };
         dialogs.add(d_0);
 
-        String[] d_1 = {"#Vertr\u00F6del keine Zeit und mach dich zu Dregen!"};
+        String[] d_1 = {"#Was willst du noch von mir?! Geh zu Dregen! Er wohnt im großen Gebäude rechts."};
         dialogs.add(d_1);
 
         String[] d_2 = {"#Was willst du hier?"};

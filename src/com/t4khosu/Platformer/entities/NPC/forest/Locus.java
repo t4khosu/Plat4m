@@ -33,16 +33,16 @@ public class Locus extends NPC {
      */
     public void generateDialogs() {
         actualDialog = 0;
-        String[] d_0 = {"#Das Wetter heute ist wundervoll, nicht wahr?"};
+        String[] d_0 = {"#Das aktuelle Wetter ist perfekt, nicht wahr?"};
         dialogs.add(d_0);
 
-        String[] d_1 = {"#Es riecht nach Regen, ich k\u00F6nnte es mir aber auch nur einbilden"};
+        String[] d_1 = {"#Die Luft fühlt sich dick an. Vielleicht bild ich mir das aber auch nur ein."};
         dialogs.add(d_1);
 
         String[] d_2 = {"#Sieht so aus als kommt ein Sturm auf uns zu."};
         dialogs.add(d_2);
 
-        String[] d_3 = {"#Das Ger\u00E4usch von Regen und Gewitter beruhigt mich immer."};
+        String[] d_3 = {"#Der Geruch nach Regen beruhigt mich immer."};
         dialogs.add(d_3);
     }
 

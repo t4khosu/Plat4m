@@ -12,7 +12,7 @@ public class IronShovel extends Item {
 		
 		this.sprite 		= Sprite.item_ironShovel;
 		this.type 			= ItemType.SHOVEL;
-		this.description 	= "Ziemlich alt und schon oft genutzt.";
+		this.description 	= "Alt und oft genutzt.";
 		this.name			= "Schaufel";
 		this.value			= 50;
 		

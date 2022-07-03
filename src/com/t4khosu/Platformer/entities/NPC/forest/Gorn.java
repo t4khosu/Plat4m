@@ -30,12 +30,13 @@ public class Gorn extends NPC {
      */
     public void generateDialogs() {
         actualDialog = 0;
-        String[] a = {"#Ha-a-llo.... Fremder?",
-                "#Ehm......",
-                "#Jaaaa......",
-                "#Also ehm...",
-                "#hmmmmmm...",
-                "#*Er schaut peinlich ber\u00FChrt in eine andere Richtung*"
+        String[] a = {
+                "#...",
+                "#Ehm..",
+                "#Ha-a-llo.... Fremder?",
+                "#Also...",
+                "#Hmm....",
+                "#*Gorn schaut nervös in eine andere Richtung*"
 
         };
         dialogs.add(a);

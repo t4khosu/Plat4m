@@ -9,7 +9,7 @@ public class HealthPotion extends Potion{
 	 */
 	public HealthPotion(){
 		super();
-		this.description = "Heilt wenig";
+		this.description = "Heilt einige HP";
 		this.name = "Heiltrank";
 		this.strength = 1;
 		this.color = 0xffDB4846;

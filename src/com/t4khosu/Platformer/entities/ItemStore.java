@@ -222,7 +222,7 @@ public class ItemStore extends Entity{
 										extra += " - " + (i.getValue()/2) + "Rul";
 									}
 									break;
-				case TRADESTORE: 	extra = " - " + i.getValue() + "Rul";
+				case TRADESTORE: 	extra = " - " + i.getValue() + " Rul";
 									break;
 				case FIRE:			extra = " ("+i.getAmount()+")";
 			}

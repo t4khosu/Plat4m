@@ -3,6 +3,7 @@ package com.t4khosu.Platformer.Level.dungeons;
 import com.t4khosu.Platformer.Level.Level;
 import com.t4khosu.Platformer.Level.World;
 import com.t4khosu.Platformer.Level.areas.singleLevels.dungeon_01.DungeonBossLevel;
+import com.t4khosu.Platformer.graphics.Sprite;
 
 /**
  * The first dungeon a player can find, the
@@ -24,7 +25,7 @@ public class DungeonBoss_01 extends Dungeon{
 		this.height = 1;
 		
 		this.background = null;
-		this.areaSprite = null;
+		this.areaSprite = Sprite.void_sprite;
 		
 		this.levels = new Level[width * height];
 		initLevels();

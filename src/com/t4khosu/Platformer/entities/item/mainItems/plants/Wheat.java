@@ -12,7 +12,7 @@ public class Wheat extends Item {
 		
 		this.sprite 		= Sprite.item_wheat;
 		this.type 			= ItemType.FOOD;
-		this.description 	= "frischer Weizen";
+		this.description 	= "Frischer Weizen";
 		this.name			= "Weizen";
 		this.value			= 12;
 		stackable = true;

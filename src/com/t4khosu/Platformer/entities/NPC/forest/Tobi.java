@@ -27,74 +27,83 @@ public class Tobi extends NPC {
      */
     public void generateDialogs() {
         actualDialog = 0;
-        String[] a = {"#Du hast mein Versteck gefunden! Erz\u00E4hle bitte niemanden davon!"};
+        String[] a = {"#Du hast mein geheimes Versteck gefunden? Bitte erzähle niemanden davon!"};
         dialogs.add(a);
 
         String[] b = {"#Du musst es mir versprechen!"};
         dialogs.add(b);
 
-        String[] c = {"#Das ist mein Platz und er muss auf jedenfall geheim bleiben!"};
+        String[] c = {"#Das ist mein Versteck und es muss geheim bleiben!"};
         dialogs.add(c);
 
-        String[] d = {"#Keine Eindringlinge erw\u00FCnscht!"};
+        String[] d = {"#Eigentlich darf niemand außer mir hier sein."};
         dialogs.add(d);
 
-        String[] e = {"#Ich komme immer hier her, wenn ich mich schlecht f\u00FChle..."};
+        String[] e = {"#Ich bin immer hier, wenn ich mich unwohl fühle."};
         dialogs.add(e);
 
-        String[] f = {"#Bitte lass mich alleine hier sein."};
+        String[] f = {"#Also lass mich bitte in Ruhe."};
         dialogs.add(f);
 
-        String[] g = {"#Wieso gehst du nicht einfach?"};
+        String[] g = {"#Wieso gehst du nicht?"};
         dialogs.add(g);
 
-        String[] h = {"#Dann bleib halt wenn es dich gl\u00FCcklich macht..."};
+        String[] h = {"#Dann bleib halt. Wenn es dich glücklich macht..."};
         dialogs.add(h);
 
-        String[] i = {"#Das war nat\u00FCrlich nicht ernst gemeint! Was willst du von mir?!"};
+        String[] i = {"#Das war nicht ernst gemeint! Geh!"};
         dialogs.add(i);
 
-        String[] j = {"#Wir k\u00F6nnen das hier auf die harte oder weiche Tour regeln!"};
+        String[] j = {"#Wir können das auch auf die harte Tour machen!"};
         dialogs.add(j);
 
-        String[] k = {"#Willst du es wirklich drauf anlegen?"};
+        String[] k = {"#Willst du es riskieren?"};
         dialogs.add(k);
 
-        String[] l = {"#Ich z\u00E4hle bis 3 und wenn du dann noch nicht verschwunden bist gibt es ein Problem. also:"};
+        String[] l = {"#Ich zähle bis 3. Wenn du bis dahin nicht verschwunden bist, dann..."};
         dialogs.add(l);
 
         String[] m = {"#1...2...3..."};
         dialogs.add(m);
 
-        String[] n = {"#Okay, du hast mich durchschaut, ich kann keine Gewalt anwenden! zufrieden?!"};
+        String[] n = {"#Okay, du hast mich durchschaut. Ich hasse Gewalt. Bist du jetzt zufrieden?"};
         dialogs.add(n);
 
-        String[] o = {"#Hasst du mich allen ernstes so sehr?..."};
+        String[] o = {"#Willst du mir den Tag allen ernstes kaputt machen?"};
         dialogs.add(o);
 
-        String[] p = {"#Na gut, letzter Versuch: Was h\u00E4lst du davon, wenn ich dir Geld gebe damit du verschwindest?"};
+        String[] p = {"#Na gut. Was hälst du davon: Ich gebe dir Geld und dafür verschwindest du."};
         dialogs.add(p);
 
-        String[] q = {"#Eine gute Idee, oder? Also warte kurz."};
+        String[] q = {"#Das klingt doch gut, oder? Ich muss nur eben mein Geld suchen."};
         dialogs.add(q);
 
-        String[] r = {"#Warte ich habe gleich mein Geld gefunden..."};
+        String[] r = {"#Warte ich habe es gleich gefunden..."};
         dialogs.add(r);
 
         String[] s = {"#Nur noch eine Sekunde."};
         dialogs.add(s);
 
-        String[] t = {"#So, hier, nimm es und lass mich in Ruhe."};
+        String[] s1 = {"#.........."};
+        dialogs.add(s1);
+
+        String[] t = {"#So. Hier, nimm es und lass mich in Ruhe."};
         dialogs.add(t);
 
-        String[] u = {"#Was? Ich habe dir kein Geld gegeben? HA, da siehst du mal wie es ist verarscht zu werden!"};
+        String[] u = {"#Was? Ich habe dir kein Geld gegeben? Haha! Da siehst du mal wie es ist verspottet zu werden!"};
         dialogs.add(u);
 
-        String[] v = {"#Das kommt davon wenn du dich mit dem Falschen anlegst. Ich bin kein meister der Gewalt, aber Meister darin Hoffnungen zerplatzen zu lassen."};
+        String[] v = {"#Das kommt davon, wenn du dich mit Tobi anlegst."};
         dialogs.add(v);
 
-        String[] w = {"#Ich hoffe der Groll wird dir auf ewig inne wohnen!"};
+        String[] v1 = {"#Ich bin kein Meister der Gewalt, aber Meister darin Hoffnungen zerplatzen zu lassen."};
+        dialogs.add(v1);
+
+        String[] w = {"#Ich wünsche dir, dass du nie wieder jemanden vertrauen kannst."};
         dialogs.add(w);
+
+        String[] x = {"#Tschüss."};
+        dialogs.add(x);
     }
 
     /**

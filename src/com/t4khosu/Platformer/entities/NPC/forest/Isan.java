@@ -26,12 +26,25 @@ public class Isan extends NPC {
      * generate all dialogs
      */
     public void generateDialogs() {
-        actualDialog = 0;
-        String[] a = {"#Schon gewusst:",
+        this.actualDialog = 0;
+
+        String[] d1 = {
+                "#Schon gewusst:",
+                "#Manche Personen sagen verschiedene Dinge wenn man sie mehrfach anspricht!",
+                "#Eigentlich logisch.",
+                "#Wir sind schließlich keine Programme, die nur vorgeschriebene Texte sagen können.",
+                "#Hahaha."
+        };
+        dialogs.add(d1);
+
+        String[] d2 = {
+                "#Schon gewusst:",
                 "#Manche Personen sagen verschiedene Dinge wenn man sie anspricht!",
-                "#Eigentlich logisch... ist ja nicht so als seien wir irgendwelche k�nstlichen Intelligenzen die nur vorgeschriebene Texte sagen k�nnen.",
-                "#Hahaha"};
-        dialogs.add(a);
+                "#Eigentlich logisch.",
+                "#Wir sind schließlich keine Programme, die nur vorgeschriebene Texte sagen können.",
+                "#Aber das habe ich dir ja bereits gesagt."
+        };
+        dialogs.add(d2);
     }
 
     /**
@@ -39,21 +52,19 @@ public class Isan extends NPC {
      */
     public void stopTalking() {
         talking = false;
+        if (this.actualDialog == 0) {
+            this.actualDialog += 1;
+        }
     }
 
     /**
      * check when npc starts talking
      */
     public void talk() {
-        talking = true;
+        this.talking = true;
     }
 
-    /**
-     * render sprite
-     *
-     * @param screen
-     */
     public void render(Screen screen) {
-        screen.renderNewHSB(x, y, sprite, true, 0.85f, 0.7f);
+        screen.renderNewHSB(x, y, sprite, true, 0.85f, 0.9f);
     }
 }

@@ -35,9 +35,9 @@ public class Giza extends NPC {
      */
     public void generateDialogs() {
         actualDialog = 0;
-        String[] a = {"#Ich liebe B�cher! Ich k�nnte den ganzen Tag lesen!",
-                "#Wenn du auch gerne liest, stell dich einfach vor ein B�cherregal und dr�cke <SPACE>.",
-                "#Vielleicht findest du Literatur, die auch dich interessiert!"};
+        String[] a = {"#Ich liebe Bücher! Ich könnte den ganzen Tag lesen!",
+                "#Du liest auch gerne? Dann stell dich vor Dregens Bücherregal und drücke <Space>.",
+                "#Vielleicht findest du etwas das dich interessiert!"};
         dialogs.add(a);
     }
 
