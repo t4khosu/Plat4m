@@ -163,6 +163,7 @@ public abstract class Area {
 		this.actualLevel = level;
 		this.actualLevelX = level.getAreaPosX();
 		this.actualLevelY = level.getAreaPosY();
+		player.initLevel(this.actualLevel);
 	}
 	public void setActualLevel(int x, int y){
 		Level l = levels[x + y * width];
