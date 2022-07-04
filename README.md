@@ -13,6 +13,13 @@ to learn Object Oriented Programming (OOP). Consequently, Plat4m could be regard
 Either download the latest release or run the [Main Function](src/com/t4khosu/Platformer/Game.java) in your Java IDE. The only requirement is
 Java JDK >= v11.
 
+## Controls?
+Because the controls are not really explained, here is a comprehensive manual:
+* **Arrow Keys**. Move, jump and crawl.
+* **Space**. Interact (with NPCs, chests, ...)
+* **E**. Open inventory.
+* **H**. Harvest.
+
 ## What can I expect?
 Since the game is unfinished and I was not as experienced in 2016 as I am now, there are quite a few (known) bugs. Furthermore, I thought it would be easier
 to implement it in German (as I am from Germany); so, for my non-German folks this game might be unplayable.
