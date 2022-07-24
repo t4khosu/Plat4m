@@ -40,10 +40,10 @@ I love game programming, but looking back I encountered some major flaws.
 
 ![alt text](img/menu.png)
 
-![alt text](img/gameplay_1.png)
+![alt text](img/gp1.png)
 
-![alt text](img/gameplay_2.png)
+![alt text](img/gp2.png)
 
-![alt text](img/gameplay_3.png)
+![alt text](img/gp3.png)
 
-![alt text](img/gameplay_4.png)
+![alt text](img/gp4.png)
